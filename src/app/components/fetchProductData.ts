@@ -23,6 +23,8 @@ const getProductData = async () => {
   }
 }`);
   return res;
+ 
 };
+
 
 export default getProductData;

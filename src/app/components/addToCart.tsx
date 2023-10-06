@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { urlForImage } from "../../../sanity/lib/image";
 import { IProduct } from "./fetchProductData";
-import { getProductData } from "./fetchProductData";
+import  getProductData  from "./fetchProductData";
 
 const AddToCart = () => {
   const [data, setData] = useState<IProduct[]>([]);
