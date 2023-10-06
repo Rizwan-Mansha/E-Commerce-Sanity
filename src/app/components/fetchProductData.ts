@@ -12,7 +12,7 @@ export interface IProduct {
   };
 }
 
-export const getProductData = async () => {
+const getProductData = async () => {
   const res = await client.fetch(`*[_type=="product"]{
   _id,
   price,
@@ -24,3 +24,5 @@ export const getProductData = async () => {
 }`);
   return res;
 };
+
+export default getProductData;
