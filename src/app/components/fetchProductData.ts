@@ -13,7 +13,7 @@ export interface IProduct {
   };
 }
 
-const getProductData = async () => {
+const GetProductData = async () => {
   const res = await client.fetch(groq`*[_type=="product"]{
   _id,
   price,
@@ -28,4 +28,4 @@ const getProductData = async () => {
 };
 
 
-export default getProductData;
+export default GetProductData;

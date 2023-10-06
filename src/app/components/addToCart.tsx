@@ -1,9 +1,9 @@
-'use client'
+"use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { urlForImage } from "../../../sanity/lib/image";
 import { IProduct } from "./fetchProductData";
-import  getProductData  from "./fetchProductData";
+import GetProductData from "./fetchProductData";
 
 const AddToCart = () => {
   const [data, setData] = useState<IProduct[]>([]);
@@ -11,7 +11,7 @@ const AddToCart = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const productData: IProduct[] = await getProductData();
+      const productData: IProduct[] = await GetProductData();
       setData(productData);
     };
     fetchData();
